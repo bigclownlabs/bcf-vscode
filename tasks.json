@@ -1,16 +1,16 @@
 {
     "version": "2.0.0",
     "command": "make",
-    "isShellCommand": true,
     "args": [],
-    "showOutput": "always",
+    "presentation" : { "reveal": "always" },
     "echoCommand": true,
-    "suppressTaskName": true,
+    "suppresslabel": true,
     "tasks": [
         {
-            "taskName": "build",
-            "isBuildCommand": true,
-            "args": [],
+            "label": "build",
+            "args": ["-j4"],
+            "type": "shell",
+            "command": "make",
             "problemMatcher": {
                 "owner": "cpp",
                 "fileLocation": ["relative", "${workspaceRoot}"],
@@ -22,22 +22,30 @@
                     "severity": 4,
                     "message": 5
                 }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
             }
         },
         {
-            "taskName": "dfu",
+            "label": "dfu",
+            "type": "shell",
             "args": ["dfu"]
         },
         {
-            "taskName": "ozone",
+            "label": "ozone",
+            "type": "shell",
             "args": ["ozone"]
         },
         {
-            "taskName": "update",
+            "label": "update",
+            "type": "shell",
             "args": ["update"]
         },
         {
-            "taskName": "clean",
+            "label": "clean",
+            "type": "shell",
             "args": ["clean"]
         }
     ]
