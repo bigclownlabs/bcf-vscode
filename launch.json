@@ -6,16 +6,16 @@
         "type": "cppdbg",
         "request": "launch",
         "preLaunchTask": "build",
-        "cwd": "${workspaceRoot}",
+        "cwd": "${workspaceFolder}",
         "MIMode": "gdb",
         "miDebuggerServerAddress": "localhost:2331",
         "logging": {
             "engineLogging": true
         },
-        "program": "${workspaceRoot}\\out\\debug\\firmware.elf",
+        "program": "${workspaceFolder}\\out\\debug\\firmware.elf",
         "miDebuggerPath": "arm-none-eabi-gdb",
         "debugServerPath": "make",
-        "debugServerArgs": "-w -C \"${workspaceRoot}\" jlink",
+        "debugServerArgs": "-w -C \"${workspaceFolder}\" jlink",
         "serverStarted": "Connected to target",
         "serverLaunchTimeout": 10000,
         "windows": {
@@ -26,17 +26,17 @@
       "name": "Black Magic Probe",
       "type": "cppdbg",
       "request": "launch",
-      "cwd": "${workspaceRoot}",
+      "cwd": "${workspaceFolder}",
       "MIMode": "gdb",
       "targetArchitecture": "arm",
       "logging": {
           "engineLogging": true
       },
-      "program": "${workspaceRoot}\\out\\debug\\firmware.elf",
+      "program": "${workspaceFolder}\\out\\debug\\firmware.elf",
       "miDebuggerPath": "arm-none-eabi-gdb",
       "customLaunchSetupCommands": [
           {
-            "text": "cd ${workspaceRoot}\\out\\debug"
+            "text": "cd ${workspaceFolder}\\out\\debug"
           },
           {
             "text": "target extended-remote \\\\.\\COM9" /* replace with your COM or /dev/ttyX */
@@ -54,7 +54,7 @@
             "text": "load"
           },
           {
-              "text": "cd ${workspaceRoot}"
+              "text": "cd ${workspaceFolder}"
             },
           {
             "text": "set mem inaccessible-by-default off"
