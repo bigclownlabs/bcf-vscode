@@ -34,6 +34,40 @@
             "args": ["dfu"]
         },
         {
+            "label": "flash",
+            "type": "shell",
+            "command": "bcf",
+
+            // Interactive serial port selection with focus to the console
+            "args": ["flash"],
+            "presentation": {"focus": true},
+
+            // Windows - Flash to the selected serial port
+            //"args": ["flash", "--device", "COM1"],
+
+            // Linux - Flash to the selected serial port
+            //"args": ["flash", "--device", "/dev/ttyUSB0"],
+
+            "problemMatcher": []
+        },
+        {
+            "label": "flash+log",
+            "type": "shell",
+            "command": "bcf",
+
+            // Interactive serial port selection with focus to the console
+            "args": ["flash", "--log"],
+            "presentation": {"focus": true},
+
+            // Windows - Flash to the selected serial port
+            //"args": ["flash", "--device", "COM1", "--log"],
+
+            // Linux - Flash to the selected serial port
+            //"args": ["flash", "--device", "/dev/ttyUSB0", "--log"],
+
+            "problemMatcher": []
+        },
+        {
             "label": "ozone",
             "type": "shell",
             "args": ["ozone"]
