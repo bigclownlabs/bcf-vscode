@@ -1,10 +1,10 @@
-<a href="https://www.bigclown.com/"><img src="https://bigclown.sirv.com/logo.png" width="200" alt="BigClown Logo" align="right"></a>
+<a href="https://www.hardwario.com/"><img src="https://www.hardwario.com/ci/assets/hw-logo.svg" width="200" alt="HARDWARIO Logo" align="right"></a>
 
-# BigClown IDE
+# HARDWARIO IDE
 
 VSCode + ARM GCC + utilities.
 For SDK API documentation have a look at http://sdk.bigclown.com/
-For whole BigClown documentation have a look at https://doc.bigclown.com/
+For whole HARDWARIO documentation have a look at https://doc.bigclown.com/
 
 ## Build project
 
