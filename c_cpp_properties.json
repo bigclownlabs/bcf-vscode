@@ -4,7 +4,19 @@
             "name": "STM32L083",
             "defines": [
                 "STM32L083xx"
-            ]
+            ],
+            "includePath": [
+                "${workspaceFolder}/app/**",
+                "${workspaceFolder}/sdk/bcl/inc",
+                "${workspaceFolder}/sdk/sys/inc",
+                "${workspaceFolder}/sdk/stm/spirit1/inc",
+                "${workspaceFolder}/sdk/stm/hal/inc",
+                "${workspaceFolder}/sdk/stm/usb/inc",
+                "${workspaceFolder}/sdk/twr/**",
+                "${workspaceFolder}/sdk/lib/**",
+                "${default}"
+            ],
+            "cStandard": "c11"
         }
     ],
     "version": 4
